@@ -10,8 +10,7 @@ while wait(.5) do
         wait(0.1)
     end
     wait(0.4)
-    while #clovers ~= 0 and #boxes == 0 do
-        boxes = game.Workspace.Boxes:GetChildren()
+    while #clovers ~= 0 do
         clovers = game.Workspace.Clovers:GetChildren()
         if #clovers > 0 then
             me:MoveTo(clovers[1].Position)
@@ -24,9 +23,10 @@ while wait(.5) do
         if y.name == "Owner" then
             if y.Value == "midstacks" then
                 me:MoveTo(y.Parent.Base.Position)
+                wait(2)
                 game:GetService("ReplicatedStorage").Layouts:InvokeServer("Load",getgenv().layoutone)
                 game:GetService("ReplicatedStorage").Rebirth:InvokeServer(26)
-                wait(3)
+                wait(2)
             end
         end
     end
