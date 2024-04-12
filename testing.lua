@@ -10,7 +10,8 @@ while wait(.5) do
         wait(0.2)
     end
     wait(0.4)
-    while #clovers ~= 0 do
+    while #clovers ~= 0 and #boxes == 0 do
+        boxes = game.Workspace.Boxes:GetChildren()
         clovers = game.Workspace.Clovers:GetChildren()
         if #clovers > 0 then
             me:MoveTo(clovers[1].Position)
@@ -19,7 +20,7 @@ while wait(.5) do
         wait(0.3)
     end
     for x,y in pairs(game.Workspace:GetDescendants()) do
-        if y.ClassName == "StringValue" then
+        if y.name == "Owner" then
             if y.Value == "midstacks" then
             me:MoveTo(y.Parent.Base.Position)
             end
