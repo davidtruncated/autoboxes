@@ -14,8 +14,10 @@ while wait(.5) do
         clovers = game.Workspace.Clovers:GetChildren()
         if #clovers > 0 then
         me:MoveTo(clovers[1].Position)
-        wait(0.1)
-        fireproximityprompt(clovers[1]:FindFirstChild("ProximityPrompt")) 
+        wait(0.2)
+        if clovers[1] then
+            fireproximityprompt(clovers[1]:FindFirstChild("ProximityPrompt")) 
+        end
         wait(0.3)
         end
     end
