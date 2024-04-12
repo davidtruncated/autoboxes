@@ -5,7 +5,7 @@ while wait(.5) do
     while #boxes ~= 0 do
         boxes = game.Workspace.Boxes:GetChildren()
         if #boxes > 0 then
-            me:MoveTo(boxes[1].Position)
+            me.CFrame = (boxes[1].CFrame)
             wait(0.1)
         end
     end
