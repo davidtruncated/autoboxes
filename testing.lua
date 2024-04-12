@@ -27,7 +27,7 @@ while wait(.5) do
                 game.ReplicatedStorage.Rebirth:InvokeServer()
                 wait(4)
                 game.ReplicatedStorage.Layouts:InvokeServer("Load","Layout1")
-                wait(1)
+                wait(3)
             end
         end
     end
