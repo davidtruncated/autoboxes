@@ -24,8 +24,8 @@ while wait(.5) do
             if y.Value == "midstacks" then
                 me:MoveTo(y.Parent.Base.Position)
                 wait(2)
-                game:GetService("ReplicatedStorage").Layouts:InvokeServer("Load",getgenv().layoutone)
-                game:GetService("ReplicatedStorage").Rebirth:InvokeServer(26)
+                game.ReplicatedStorage.Layouts:InvokeServer("Load","Layout1")
+                game.ReplicatedStorage.Rebirth:InvokeServer()
                 wait(2)
             end
         end
