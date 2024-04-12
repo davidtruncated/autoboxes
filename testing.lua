@@ -1,12 +1,13 @@
 me = game.Players.LocalPlayer.Character
+boxes = game.Workspace.Boxes:GetChildren()
+clovers = game.Workspace.Clovers:GetChildren()
 while wait(.5) do
-    boxes = game.Workspace.Boxes:GetChildren()
-    clovers = game.Workspace.Clovers:GetChildren()
     while #boxes ~= 0 do
         boxes = game.Workspace.Boxes:GetChildren()
         if #boxes > 0 then
             me.Position = boxes[1].Position
             wait(0.1)
+            me:MoveTo(boxes[1].Position)
         end
     end
     wait(0.4)
