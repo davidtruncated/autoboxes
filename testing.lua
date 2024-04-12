@@ -18,7 +18,7 @@ while wait(.5) do
         end
         wait(0.3)
     end
-    for x,y in pairs(game.workspace:GetDescendants()) do
+    for x,y in pairs(game.Workspace:GetDescendants()) do
         if y.ClassName == "StringValue" then
             if y.Value == "midstacks" then
             me:MoveTo(y.Parent.Base.Position)
