@@ -9,8 +9,6 @@ while wait(.5) do
             wait(0.1)
         end
     end
-    wait(0.2)
-    me:MoveTo(game.Workspace.beamOrigin.Position)
     while #clovers ~= 0 do
         clovers = game.Workspace.Clovers:GetChildren()
         if #clovers > 0 then
