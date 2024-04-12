@@ -23,13 +23,12 @@ while wait(.5) do
         if y.name == "Owner" then
             if y.Value == "midstacks" then
                 me:MoveTo(y.Parent.Base.Position)
-                wait(1)
-                game.ReplicatedStorage.Rebirth:InvokeServer()
                 wait(2)
-                game.ReplicatedStorage.Layouts:InvokeServer("Load","Layout1")
+                game.ReplicatedStorage.Rebirth:InvokeServer()
+                --wait(2)
+                --game.ReplicatedStorage.Layouts:InvokeServer("Load","Layout1")
                 wait(1)
             end
         end
     end
-    
 end
