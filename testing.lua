@@ -21,5 +21,6 @@ while wait(.5) do
             end
         end
         end
+        wait(0.2)
     end
 end
