@@ -23,9 +23,12 @@ while wait(.5) do
     for x,y in pairs(game.Workspace:GetDescendants()) do
         if y.name == "Owner" then
             if y.Value == "midstacks" then
-            me:MoveTo(y.Parent.Base.Position)
+                me:MoveTo(y.Parent.Base.Position)
+                game:GetService("ReplicatedStorage").Layouts:InvokeServer("Load",getgenv().layoutone)
+                game:GetService("ReplicatedStorage").Rebirth:InvokeServer(26)
+                wait(3)
             end
         end
     end
-    wait(1)
+    
 end
