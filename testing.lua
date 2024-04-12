@@ -25,9 +25,9 @@ while wait(.5) do
                 me:MoveTo(y.Parent.Base.Position)
                 wait(1)
                 game.ReplicatedStorage.Rebirth:InvokeServer()
-                wait(4)
-                game.ReplicatedStorage.Layouts:InvokeServer("Load","Layout1")
                 wait(3)
+                game.ReplicatedStorage.Layouts:InvokeServer("Load","Layout1")
+                wait(2)
             end
         end
     end
