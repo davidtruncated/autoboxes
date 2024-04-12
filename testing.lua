@@ -7,7 +7,7 @@ while wait(.5) do
         if #boxes > 0 then
             me:MoveTo(boxes[1].Position)
         end
-        wait(0.2)
+        wait(0.1)
     end
     wait(0.4)
     while #clovers ~= 0 and #boxes == 0 do
