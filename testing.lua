@@ -1,4 +1,5 @@
 me = game.Players.LocalPlayer.Character
+username = game.Players.LocalPlayer.Name
 while wait(.5) do
     boxes = game.Workspace.Boxes:GetChildren()
     clovers = game.Workspace.Clovers:GetChildren()
@@ -21,7 +22,7 @@ while wait(.5) do
     wait(0.5)
     for x,y in pairs(game.Workspace:GetDescendants()) do
         if y.name == "Owner" then
-            if y.Value == "midstacks" then
+            if y.Value == username then
                 me:MoveTo(y.Parent.Base.Position)
                 wait(1)
                 game.ReplicatedStorage.Rebirth:InvokeServer()
