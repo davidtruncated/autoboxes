@@ -1,5 +1,7 @@
 me = game.Players.LocalPlayer.Character
 username = game.Players.LocalPlayer.Name
+game.workspace.Map:FindFirstChild("Rocks"):Destroy()
+game.workspace.Map:FindFirstChild("Trees"):Destroy()
 while wait(.5) do
     boxes = game.Workspace.Boxes:GetChildren()
     clovers = game.Workspace.Clovers:GetChildren()
