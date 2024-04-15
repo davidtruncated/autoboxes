@@ -3,7 +3,7 @@ username = game.Players.LocalPlayer.Name
 --game.workspace.Map:FindFirstChild("Rocks"):Destroy()
 --game.workspace.Map:FindFirstChild("Trees"):Destroy()
 while wait(.5) do
-    boxes = game.Workspace.Boxes:GetChildren()
+    --[[boxes = game.Workspace.Boxes:GetChildren()
     --clovers = game.Workspace.Clovers:GetChildren()
     while #boxes ~= 0 do
         boxes = game.Workspace.Boxes:GetChildren()
@@ -11,7 +11,7 @@ while wait(.5) do
             me:MoveTo(boxes[1].Position)
         end
         wait(0.1)
-    end--[[
+    end
     wait(0.4)
     while #clovers ~= 0 do
         clovers = game.Workspace.Clovers:GetChildren()
