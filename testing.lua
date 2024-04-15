@@ -1,10 +1,11 @@
 me = game.Players.LocalPlayer.Character
 username = game.Players.LocalPlayer.Name
-if username == "midstacks" then
+chosen = "Layout1"
+--[[if username == "midstacks" then
     chosen = "Layout1"
 else
     chosen = "Layout2"
-end
+end]]--
 --game.workspace.Map:FindFirstChild("Rocks"):Destroy()
 --game.workspace.Map:FindFirstChild("Trees"):Destroy()
 while wait(.5) do
