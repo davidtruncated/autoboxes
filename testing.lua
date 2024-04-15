@@ -1,5 +1,10 @@
 me = game.Players.LocalPlayer.Character
 username = game.Players.LocalPlayer.Name
+if username == "midstacks" then
+    chosen = "Layout1"
+else
+    chosen = "Layout2"
+end
 --game.workspace.Map:FindFirstChild("Rocks"):Destroy()
 --game.workspace.Map:FindFirstChild("Trees"):Destroy()
 while wait(.5) do
@@ -29,7 +34,7 @@ while wait(.5) do
                 wait(1)
                 game.ReplicatedStorage.Rebirth:InvokeServer()
                 wait(3)
-                game.ReplicatedStorage.Layouts:InvokeServer("Load","Layout2")
+                game.ReplicatedStorage.Layouts:InvokeServer("Load",chosen)
                 wait(2)
             end
         end
