@@ -1,12 +1,7 @@
 me = game.Players.LocalPlayer.Character
 --username = game.Players.LocalPlayer.Name
-chosen = "Layout1"
+chosen = "Layout2"
 
---[[for x,y in pairs(game.Workspace.Map.EGG_SPAWNS:GetDescendants()) do
-    if y.name == "Eggicopter" then
-        me:MoveTo(y.Position)
-    end
-end]]--
 --[[if username == "midstacks" then
     chosen = "Layout1"
 else
