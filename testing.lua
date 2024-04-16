@@ -1,7 +1,6 @@
 me = game.Players.LocalPlayer.Character
 --username = game.Players.LocalPlayer.Name
 chosen = "Layout1"
-eggtable = game.Workspace.Map.EGG_SPAWNS:GetChildren()
 
 --[[for x,y in pairs(game.Workspace.Map.EGG_SPAWNS:GetDescendants()) do
     if y.name == "Eggicopter" then
@@ -37,12 +36,10 @@ while wait(.5) do
         end
         wait(0.1)
     end
-    for x,y in pairs(eggtable) do
-        for index,stuff in pairs(y:GetChildren()) do
-            if stuff:IsA("Part") then
-                me:MoveTo(stuff.Position)
-                wait(5)
-            end
+    for x,y in pairs(game.Workspace:GetDescendants()) do
+        if y.Name == "EGGSPAWN" or y.Name == "BANANASPAWN" or y.Name == "SPORESTSPAWN" then
+            me:MoveTo(y.Position)
+            wait(3)
         end
     end
     wait(0.5)
