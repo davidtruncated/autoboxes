@@ -41,7 +41,9 @@ while wait(.5) do
             egg = y:FindFirstChildOfClass("Part")
             if egg then
             	me:MoveTo(y.Position)
-                wait(3)
+                wait(0.2)
+                fireproximityprompt(egg:FindFirstChild("ProximityPrompt"))
+                wait(0.2)
             end
         end
     end
