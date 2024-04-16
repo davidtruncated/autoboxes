@@ -40,20 +40,13 @@ while wait(.5) do
         if y.Name == "EGGSPAWN" or y.Name == "BANANASPAWN" or y.Name == "SPORESTSPAWN" then
             if #y:GetDescendants() > 1 then
                 me:MoveTo(y.Position)
+                wait(0.2)
                 for index,item in pairs(y:GetDescendants()) do
                     if item.Name == "ProximityPrompt" then
                         fireproximityprompt(item)
                         wait(0.5)
                     end
                 end
-            end
-            egg = y:FindFirstChildOfClass("BasePart")
-            if egg then
-            	
-                --wait(1)
-                
-                --fireproximityprompt(egg:FindFirstChild("ProximityPrompt"))
-                wait(0.2)
             end
         end
     end
