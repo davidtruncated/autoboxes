@@ -1,5 +1,5 @@
 me = game.Players.LocalPlayer.Character
-username = game.Players.LocalPlayer.Name
+--username = game.Players.LocalPlayer.Name
 chosen = "Layout1"
 --[[if username == "midstacks" then
     chosen = "Layout1"
@@ -9,7 +9,7 @@ end]]--
 --game.workspace.Map:FindFirstChild("Rocks"):Destroy()
 --game.workspace.Map:FindFirstChild("Trees"):Destroy()
 while wait(.5) do
-    --[[boxes = game.Workspace.Boxes:GetChildren()
+    boxes = game.Workspace.Boxes:GetChildren()
     --clovers = game.Workspace.Clovers:GetChildren()
     while #boxes ~= 0 do
         boxes = game.Workspace.Boxes:GetChildren()
@@ -18,7 +18,7 @@ while wait(.5) do
         end
         wait(0.1)
     end
-    wait(0.4)
+    --[[wait(0.4)
     while #clovers ~= 0 do
         clovers = game.Workspace.Clovers:GetChildren()
         if #clovers > 0 then
