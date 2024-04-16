@@ -40,11 +40,12 @@ while wait(.5) do
         if y.Name == "EGGSPAWN" or y.Name == "BANANASPAWN" or y.Name == "SPORESTSPAWN" then
             if #y:GetDescendants() > 1 then
                 me:MoveTo(y.Position)
-                wait(0.2)
+                wait(0.5)
                 for index,item in pairs(y:GetDescendants()) do
                     if item.Name == "ProximityPrompt" then
                         fireproximityprompt(item)
                         wait(0.5)
+                        fireproximityprompt(item)
                     end
                 end
             end
