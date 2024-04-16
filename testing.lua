@@ -38,8 +38,11 @@ while wait(.5) do
     end
     for x,y in pairs(game.Workspace:GetDescendants()) do
         if y.Name == "EGGSPAWN" or y.Name == "BANANASPAWN" or y.Name == "SPORESTSPAWN" then
-            me:MoveTo(y.Position)
-            wait(3)
+            egg = y:FindFirstChildOfClass("Part")
+            if egg then
+            	me:MoveTo(y.Position)
+                wait(3)
+            end
         end
     end
     wait(0.5)
