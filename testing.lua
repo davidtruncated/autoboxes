@@ -3,11 +3,11 @@ me = game.Players.LocalPlayer.Character
 chosen = "Layout1"
 eggtable = game.Workspace.Map.EGG_SPAWNS:GetChildren()
 
-for x,y in pairs(game.Workspace.Map.EGG_SPAWNS:GetDescendants()) do
+--[[for x,y in pairs(game.Workspace.Map.EGG_SPAWNS:GetDescendants()) do
     if y.name == "Eggicopter" then
         me:MoveTo(y.Position)
     end
-end
+end]]--
 --[[if username == "midstacks" then
     chosen = "Layout1"
 else
@@ -26,7 +26,7 @@ end]]--
         wait(0.1)
     end]]--
 
---[[
+
 while wait(.5) do
     boxes = game.Workspace.Boxes:GetChildren()
     --clovers = game.Workspace.Clovers:GetChildren()
@@ -37,7 +37,10 @@ while wait(.5) do
         end
         wait(0.1)
     end
-
+    for x,y in pairs(eggtable) do
+        temp = y:FindFirstChildWhichIsA("Part")
+        me:MoveTo(temp.Position)
+    end
     wait(0.5)
     for x,y in pairs(game.Workspace:GetDescendants()) do
         if y.name == "Owner" then
@@ -51,4 +54,4 @@ while wait(.5) do
             end
         end
     end
-end]]--
+end
