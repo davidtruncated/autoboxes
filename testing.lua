@@ -38,9 +38,11 @@ while wait(.5) do
         wait(0.1)
     end
     for x,y in pairs(eggtable) do
-        temp = y:FindFirstChildOfClass("Part")
-        if temp then
-            me:MoveTo(temp.Position)
+        for index,stuff in pairs(y:GetChildren()) do
+            if stuff:IsA("Part") then
+                me:MoveTo(stuff.Position)
+                wait(5)
+            end
         end
     end
     wait(0.5)
