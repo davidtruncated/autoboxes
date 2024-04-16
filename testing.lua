@@ -1,6 +1,6 @@
 me = game.Players.LocalPlayer.Character
 --username = game.Players.LocalPlayer.Name
-chosen = "Layout2"
+chosen = "Layout1"
 
 --[[if username == "midstacks" then
     chosen = "Layout1"
