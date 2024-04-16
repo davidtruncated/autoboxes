@@ -38,8 +38,10 @@ while wait(.5) do
         wait(0.1)
     end
     for x,y in pairs(eggtable) do
-        temp = y:FindFirstChildWhichIsA("Part")
-        me:MoveTo(temp.Position)
+        temp = y:FindFirstChildOfClass("Part")
+        if temp then
+            me:MoveTo(temp.Position)
+        end
     end
     wait(0.5)
     for x,y in pairs(game.Workspace:GetDescendants()) do
