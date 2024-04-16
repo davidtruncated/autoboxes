@@ -12,8 +12,8 @@ end]]--
 else
     chosen = "Layout2"
 end]]--
-game.workspace.Map:FindFirstChild("Rocks"):Destroy()
-game.workspace.Map:FindFirstChild("Trees"):Destroy()
+--game.workspace.Map:FindFirstChild("Rocks"):Destroy()
+--game.workspace.Map:FindFirstChild("Trees"):Destroy()
 
     --[[wait(0.4)
     while #clovers ~= 0 do
