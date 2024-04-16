@@ -2,6 +2,12 @@ me = game.Players.LocalPlayer.Character
 --username = game.Players.LocalPlayer.Name
 chosen = "Layout1"
 eggtable = game.Workspace.Map.EGG_SPAWNS:GetChildren()
+
+for x,y in pairs(game.Workspace.Map.EGG_SPAWNS:GetDescendants()) do
+    if y.name == "Eggicopter" then
+        me:MoveTo(y.Position)
+    end
+end
 --[[if username == "midstacks" then
     chosen = "Layout1"
 else
@@ -9,6 +15,18 @@ else
 end]]--
 --game.workspace.Map:FindFirstChild("Rocks"):Destroy()
 --game.workspace.Map:FindFirstChild("Trees"):Destroy()
+
+    --[[wait(0.4)
+    while #clovers ~= 0 do
+        clovers = game.Workspace.Clovers:GetChildren()
+        if #clovers > 0 then
+            me:MoveTo(clovers[1].Position)
+            fireproximityprompt(clovers[1]:FindFirstChild("ProximityPrompt")) 
+        end
+        wait(0.1)
+    end]]--
+
+--[[
 while wait(.5) do
     boxes = game.Workspace.Boxes:GetChildren()
     --clovers = game.Workspace.Clovers:GetChildren()
@@ -19,15 +37,7 @@ while wait(.5) do
         end
         wait(0.1)
     end
-    --[[wait(0.4)
-    while #clovers ~= 0 do
-        clovers = game.Workspace.Clovers:GetChildren()
-        if #clovers > 0 then
-            me:MoveTo(clovers[1].Position)
-            fireproximityprompt(clovers[1]:FindFirstChild("ProximityPrompt")) 
-        end
-        wait(0.1)
-    end]]--
+
     wait(0.5)
     for x,y in pairs(game.Workspace:GetDescendants()) do
         if y.name == "Owner" then
@@ -41,4 +51,4 @@ while wait(.5) do
             end
         end
     end
-end
+end]]--
