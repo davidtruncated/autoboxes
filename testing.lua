@@ -40,10 +40,10 @@ while wait(.5) do
         if y.Name == "EGGSPAWN" or y.Name == "BANANASPAWN" or y.Name == "SPORESTSPAWN" then
             egg = y:FindFirstChildOfClass("Part")
             if egg then
-            	me:MoveTo(y.Position)
-                wait(1)
+            	me:MoveTo(egg.Position)
+                --wait(1)
                 fireproximityprompt(egg:FindFirstChild("ProximityPrompt"))
-                fireproximityprompt(egg:FindFirstChild("ProximityPrompt"))
+                --fireproximityprompt(egg:FindFirstChild("ProximityPrompt"))
                 wait(0.2)
             end
         end
