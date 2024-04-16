@@ -1,6 +1,7 @@
 me = game.Players.LocalPlayer.Character
 --username = game.Players.LocalPlayer.Name
 chosen = "Layout1"
+eggtable = game.Workspace.Map.EGG_SPAWNS:GetChildren()
 --[[if username == "midstacks" then
     chosen = "Layout1"
 else
@@ -11,7 +12,7 @@ end]]--
 while wait(.5) do
     boxes = game.Workspace.Boxes:GetChildren()
     --clovers = game.Workspace.Clovers:GetChildren()
-    while #boxes ~= 0 do
+    while #boxes > 0 do
         boxes = game.Workspace.Boxes:GetChildren()
         if #boxes > 0 then
             me:MoveTo(boxes[1].Position)
@@ -30,7 +31,7 @@ while wait(.5) do
     wait(0.5)
     for x,y in pairs(game.Workspace:GetDescendants()) do
         if y.name == "Owner" then
-            if y.Value == username then
+            if y.Value == game.Players.LocalPlayer.Name then
                 me:MoveTo(y.Parent.Base.Position)
                 wait(1)
                 game.ReplicatedStorage.Rebirth:InvokeServer()
