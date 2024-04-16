@@ -42,7 +42,8 @@ while wait(.5) do
             if egg then
             	me:MoveTo(y.Position)
                 wait(1)
-                fireproximityprompt(egg)
+                fireproximityprompt(egg:FindFirstChild("ProximityPrompt"))
+                fireproximityprompt(egg:FindFirstChild("ProximityPrompt"))
                 wait(0.2)
             end
         end
