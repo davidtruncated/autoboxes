@@ -38,9 +38,9 @@ while wait(.5) do
     end
     for x,y in pairs(game.Workspace:GetDescendants()) do
         if y.Name == "EGGSPAWN" or y.Name == "BANANASPAWN" or y.Name == "SPORESTSPAWN" then
-            egg = y:FindFirstChildOfClass("Part")
+            egg = y:FindFirstChildOfClass("BasePart")
             if egg then
-            	me:MoveTo(egg.Position)
+            	me:MoveTo(y.Position)
                 --wait(1)
                 fireproximityprompt(egg:FindFirstChild("ProximityPrompt"))
                 --fireproximityprompt(egg:FindFirstChild("ProximityPrompt"))
