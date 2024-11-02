@@ -29,7 +29,7 @@ while wait(.5) do
         end
         wait(0.1)
     end
-    for x,y in pairs(game.Workspace:GetDescendants()) do
+    --[[for x,y in pairs(game.Workspace:GetDescendants()) do
         if y.Name == "EGGSPAWN" or y.Name == "BANANASPAWN" or y.Name == "SPORESTSPAWN" then
             if #y:GetDescendants() > 1 then
                 me:MoveTo(y.Position)
@@ -43,7 +43,7 @@ while wait(.5) do
                 end
             end
         end
-    end
+    end]]--
     wait(0.5)
     for x,y in pairs(game.Workspace:GetDescendants()) do
         if y.name == "Owner" then
