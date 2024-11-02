@@ -26,6 +26,8 @@ while wait(.5) do
         boxes = game.Workspace.Boxes:GetChildren()
         if #boxes > 0 then
             me:MoveTo(boxes[1].Position)
+            wait()
+            me.Humanoid.Jump = true
         end
         wait(0.1)
     end
