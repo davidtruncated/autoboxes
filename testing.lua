@@ -19,7 +19,7 @@ end
     end]]--
 
 
-while wait(.5) do
+while wait(3) do
     boxes = game.Workspace.Boxes:GetChildren()
     --clovers = game.Workspace.Clovers:GetChildren()
     while #boxes > 0 do
@@ -45,7 +45,7 @@ while wait(.5) do
                 end
             end
         end
-    end]]--
+    end
     wait(0.5)
     for x,y in pairs(game.Workspace:GetDescendants()) do
         if y.name == "Owner" then
@@ -58,5 +58,5 @@ while wait(.5) do
                 wait(2)
             end
         end
-    end
+    end]]--
 end
