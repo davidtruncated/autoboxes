@@ -45,7 +45,7 @@ while wait(3) do
                 end
             end
         end
-    end
+    end--]]
     wait(0.5)
     for x,y in pairs(game.Workspace:GetDescendants()) do
         if y.name == "Owner" then
@@ -58,5 +58,5 @@ while wait(3) do
                 wait(2)
             end
         end
-    end]]--
+    end
 end
